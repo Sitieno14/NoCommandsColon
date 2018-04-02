@@ -1,0 +1,21 @@
+name: NoCommandsColon
+version: 1.1
+description: Block colon (and so all HiddenSyntaxes) in commands
+main: me.Sitieno14.NoCommandsColon.main
+author: Sitieno14
+website: https://telegram.me/Sitieno14
+commands:
+  nocommandscolon:
+    usage: /nocommandscolon reload
+    description: See NoCommandsColon's commands
+  ncc:
+    usage: /ncc reload
+    description: See NoCommandsColon's commands
+permissions:
+  nocommandscolon.*:
+    description: Only OP
+    children:
+      nocommandscolon.reload: true
+    default: op
+  nocommandscolon.reload:
+    description: Reload NoCommandsColon's config.yml
